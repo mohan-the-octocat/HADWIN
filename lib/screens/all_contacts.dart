@@ -251,7 +251,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
     List<Widget> children;
     if (snapshot.hasData) {
       if (snapshot.data!.keys.join().toLowerCase().contains("error")) {
-        WidgetsBinding.instance!.addPostFrameCallback(
+        WidgetsBinding.instance.addPostFrameCallback(
             (_) => showErrorAlert(context, snapshot.data!));
 
         return contactsLoadingList(10);
