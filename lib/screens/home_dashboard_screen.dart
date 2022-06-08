@@ -310,7 +310,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
 
   Widget _buildTransactionActivities(BuildContext context) {
     if (error != null) {
-      WidgetsBinding.instance!
+      WidgetsBinding.instance
           .addPostFrameCallback((_) => showErrorAlert(context, error!));
 
       return activitiesLoadingList(10);
