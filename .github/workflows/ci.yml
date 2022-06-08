@@ -16,12 +16,15 @@ jobs:
     steps:
     
     # Setup Java environment in order to build the Android app.
+    - name: Checkout
     - uses: actions/checkout@v1
+    
+    - name: Setup local environment
     - uses: actions/setup-java@v1
       with:
         java-version: '12.x'
     
-    # Setup the flutter environment.
+    - name: Setup the flutter environment.
     - uses: subosito/flutter-action@v1
       with:
         channel: 'beta' # 'dev', 'alpha', default to: 'stable'
