@@ -34,7 +34,7 @@ jobs:
     - run: flutter format 
     
     # Statically analyze the Dart code for any errors.
-    - run: flutter analyze .
+    - run: flutter analyze --ignore-warnings . 
     
     # Run widget tests for our flutter project.
     - run: flutter test
