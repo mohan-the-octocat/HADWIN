@@ -21,7 +21,7 @@ class TransactionReceiptScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) =>
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) =>
         Provider.of<LiveTransactionsProvider>(context, listen: false)
             .removeUnreadTransaction(transactionReceipt['transactionID']));
 
