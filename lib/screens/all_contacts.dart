@@ -142,7 +142,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
   }
 
   void _showInitiateTransactionDialogBox(Map<String, dynamic> otherParty) {
-    WidgetsBinding.instance!.addPostFrameCallback((_) => showDialog(
+    WidgetsBinding.instance.addPostFrameCallback((_) => showDialog(
         context: context,
         builder: (context) => AlertDialog(
               title: Text(
