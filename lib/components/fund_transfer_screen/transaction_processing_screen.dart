@@ -81,7 +81,7 @@ class _TransactionProcessingScreenState
           _exitScreen = true;
         });
       } else {
-        WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+        WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
           executeTransaction();
         });
       }
