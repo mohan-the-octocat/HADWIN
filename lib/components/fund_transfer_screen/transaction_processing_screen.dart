@@ -253,7 +253,7 @@ class _TransactionProcessingScreenState
                 child: Center(
                   child: Builder(builder: (context) {
                     if (error != null && error != 'none') {
-                      WidgetsBinding.instance!.addPostFrameCallback(
+                      WidgetsBinding.instance.addPostFrameCallback(
                           (_) => showErrorAlert(context, error!));
 
                       return Wrap(
